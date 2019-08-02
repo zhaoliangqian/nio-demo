@@ -8,6 +8,7 @@ public class ChannelDemo {
     public static void main(String[] args) throws IOException {
         RandomAccessFile accessFile = new RandomAccessFile("data/nio-demo.txt", "rw");
         FileChannel fc = accessFile.getChannel();
+        System.out.println("channel size : " + fc.size());
 
         ByteBuffer buffer = ByteBuffer.allocate(48);
         int len = fc.read(buffer);
