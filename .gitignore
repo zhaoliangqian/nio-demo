@@ -2,3 +2,7 @@
 out
 
 nio-demo.iml
+target/.gitignore
+target/ChannelDemo.class
+target/ScatterGatherDemo.class
+target/data/
